@@ -6,17 +6,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class BusService {
 	buses: Bus[];
 	constructor(af: AngularFire) {
-		console.log(new AngularFire());
-		console.log(af);
-		this.buses = [{
-			busId: "A2F001",
-			from: "Hyderabad",
-			to: "Bangalore",
-			lastSpottedAt: "Kurnool",
-			lastSpottedTime: "10:30 PM",
-			kmsToGo: 500,
-			imageUrl: "images/bus1.png"
-		}];		
+		
+		this.buses = af.database.list("/");
+		
 		// this.buses = [{
 		// 	busId: "A2F001",
 		// 	from: "Hyderabad",
