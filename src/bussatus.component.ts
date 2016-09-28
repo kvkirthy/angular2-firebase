@@ -5,7 +5,7 @@ import { Inject } from "@angular/core";
 
 @Component({
 	selector: "bus-status",
-	templateUrl: "./app/busstatus.component.html",
+	templateUrl: "./src/busstatus.component.html",
 	providers: [BusService]
 })
 export class BusStatusComponent implements OnInit {

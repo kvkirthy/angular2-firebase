@@ -5,7 +5,13 @@ import { Inject } from "@angular/core";
 
 @Component({
 	selector: "app",
-	templateUrl: "./app/app.component.html",
+	templateUrl: "./src/app.component.html",
 	providers: [BusService]
 })
-export class AppComponent {}
+export class AppComponent {
+
+	constructor(){
+
+	}
+
+}

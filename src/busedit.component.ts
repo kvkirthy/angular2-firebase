@@ -6,7 +6,7 @@ import { Bus } from "./bus.model";
 
 @Component({
 	selector: "bus-edit",
-	templateUrl: "./app/busedit.component.html",
+	templateUrl: "./src/busedit.component.html",
 	providers: [BusService]
 })
 export class BusEditComponent implements OnInit {
